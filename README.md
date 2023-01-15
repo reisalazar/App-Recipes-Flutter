@@ -1,4 +1,4 @@
-# recipies
+# recipes
 
 A new Flutter project.
 
