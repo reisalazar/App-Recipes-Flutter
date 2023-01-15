@@ -1,4 +1,4 @@
-# expenses
+# recipes
 
 A new Flutter project.
 
