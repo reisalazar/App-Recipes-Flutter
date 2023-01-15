@@ -1,4 +1,4 @@
-# recipies
+# expenses
 
 A new Flutter project.
 
