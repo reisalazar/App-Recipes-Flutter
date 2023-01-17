@@ -1,11 +1,12 @@
-import 'dart:ui';
-
 import 'package:flutter/material.dart';
+import 'package:recipies/screens/categories_meals_screen.dart';
 import 'screens/categories_screen.dart';
 
 void main() => runApp(MyApp());
 
 class MyApp extends StatelessWidget {
+  const MyApp({super.key});
+
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -19,6 +20,9 @@ class MyApp extends StatelessWidget {
               headline6: const TextStyle(
                   fontSize: 20, fontFamily: 'RobotoCondensed'))),
       home: const CategoriesScreen(),
+      routes: {
+        '/categories-meals': (context) => const CategoriesMealsScreen(),
+      },
     );
   }
 }
