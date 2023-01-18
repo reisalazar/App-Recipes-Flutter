@@ -1,12 +1,12 @@
 import 'package:flutter/material.dart';
-import 'package:recipies/components/meal_item.dart';
+import '../components/meal_item.dart';
 import '../models/category.dart';
 import '../models/meal.dart';
 
 class CategoriesMealsScreen extends StatelessWidget {
-  const CategoriesMealsScreen(this.meals, {super.key});
-
   final List<Meal> meals;
+
+  const CategoriesMealsScreen(this.meals, {super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -22,7 +22,7 @@ class CategoriesMealsScreen extends StatelessWidget {
       ),
       body: ListView.builder(
         itemCount: categoryMeals.length,
-        itemBuilder: (context, index) {
+        itemBuilder: (ctx, index) {
           return MealItem(categoryMeals[index]);
         },
       ),
